@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Đang chuyển hướng…</title>
   <link rel="icon" href="https://anvu17.blogspot.com/favicon.ico" type="image/x-icon" />
-  <meta http-equiv="refresh" content="3;url=https://anvu17.blogspot.com">
+  <meta http-equiv="refresh" content="399;url=https://anvu17.blogspot.com">
   <style>
     html, body {
       height: 100%;
@@ -13,21 +13,24 @@
       font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
     }
     .wrap {
-      min-height: 100%;
+      height: 100vh;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       text-align: center;
       padding: 20px;
+      box-sizing: border-box;
     }
     h1 {
-      margin: 0 0 8px;
-      font-size: 20px;
+      margin: 0 0 12px;
+      font-size: clamp(12px, 4vw, 20px);
+      white-space: nowrap;
     }
     p {
       margin: 0;
       color: #444;
+      font-size: 14px;
     }
     a {
       color: #0066cc;
