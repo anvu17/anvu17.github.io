@@ -38,7 +38,17 @@
 <body>
   <div class="wrap">
     <h1>Bạn sẽ được chuyển hướng sau 5 giây</h1>
-    <p>Nếu điều này không xảy ra tự động, <a href="https://anvu17.blogspot.com" rel="noopener noreferrer">bấm vào đây</a>.</p>
+    <p>Nếu điều này không xảy ra tự động, <a id="link" href="https://anvu17.blogspot.com" rel="noopener noreferrer">bấm vào đây</a>.</p>
   </div>
+  <script>
+    const target="https://anvu17.blogspot.com";
+    const params=new URLSearchParams(location.search);
+    const p=params.get("p");
+    if(p){
+      const url=target+"/"+encodeURIComponent(p);
+      document.getElementById("link").href=url;
+      location.replace(url);
+    }
+  </script>
 </body>
 </html>
