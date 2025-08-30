@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <title>Đang chuyển hướng…</title>
+  <link rel="icon" href="https://anvu17.blogspot.com/favicon.ico" type="image/x-icon" />
+</head>
+<body>
+<script>
+  const target="https://anvu17.blogspot.com";
+  const path=location.pathname.replace(/^\/+|\/+$/g,'');
+  if(path){
+    location.replace(target+"/"+encodeURIComponent(path));
+  }else{
+    location.replace(target);
+  }
+</script>
+</body>
+</html>
